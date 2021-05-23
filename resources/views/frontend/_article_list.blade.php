@@ -57,16 +57,6 @@
                             </span>
                         </div>
                     </div>
-
-                    <div class="meta-wrap">
-                        <div class="tag-wrapper mt-30">
-                            @foreach($article->keywords as $keyword)
-                            <span class="tag-links">
-                            <a href="{{route('articles-by-keyword', [$keyword->name])}}" rel="tag">{{$keyword->name}}</a>
-                            </span>
-                            @endforeach    
-                            </div>
-                    </div>
                 </div><!-- eof .item-content -->
             </article>
             <@endforeach 

@@ -93,15 +93,15 @@
 			padding: 0 !important;
 		}
 	</style>
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel='stylesheet' id='font-awesome-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/css/font-awesome-ver-1.0.0.css' media='all' />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
 	<link rel='stylesheet' id='wp-block-library-css'
 		href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-includes/css/dist/block-library/style.min-ver=5.4.2.css' media='all' />
 	<link rel='stylesheet' id='wp-block-library-theme-css'
 		href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-includes/css/dist/block-library/theme.min-ver=5.4.2.css' media='all' />
 	<link rel='stylesheet' id='wc-block-style-css'
 		href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style-ver=2.5.14.css' media='all' />
-	<link rel='stylesheet' id='fontawesome-five-css-css'
-		href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/accesspress-social-counter/css/fontawesome-all-ver=1.8.8.css' media='all' />
+	
 	<style id='woocommerce-inline-inline-css'>
 		.woocommerce form .form-row .required {
 			visibility: visible;
@@ -272,8 +272,6 @@
 			right: 0;
 		}
 	</style>
-	<link rel='stylesheet' id='fontawesome-five-css-css'
-		href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/accesspress-social-counter/css/fontawesome-all-ver=1.8.8.css' media='all' />
 	<link rel='stylesheet' id='ico-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/css/icomoon-ver=1.0.0.css' media='all' />
 	<link rel='stylesheet' id='magia-google-font-css'
 		href='http://fonts.googleapis.com/css?family=Poppins:300,300i,400,500,700%7CEl+Messiri:300,400,500,600,700&subset=latin-ext&ver=1.0.0'
@@ -433,12 +431,7 @@
 	</script>
 	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/side-cart-woocommerce/public/js/xoo-wsc-public-ver=2.0.js'></script>
 	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-includes/js/wp-embed.min-ver=5.4.2.js'></script>
-	<!--<link rel="icon" href=".https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/uploads/2020/04/cropped-favicon-100x100.png" sizes="32x32" />-->
-	<!--<link rel="icon" href=".https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/uploads/2020/04/cropped-favicon-300x300.png" sizes="192x192" />-->
-	<!--<link rel="apple-touch-icon" href=".https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/uploads/2020/04/cropped-favicon-300x300.png" />-->
-	<!--<meta name="msapplication-TileImage"-->
-	<!--	content="http://webdesign-finder.com/magia/wp-content/uploads/2020/04/cropped-favicon-300x300.png" />-->
-	    <link rel="icon" href="https://api.starsgyan.com/StarsGyanWebsiteDev/images/favicon.jpeg" sizes="32x32" />
+	<link rel="icon" href="https://api.starsgyan.com/StarsGyanWebsiteDev/images/favicon.jpeg" sizes="32x32" />
     <link rel="icon" href="https://api.starsgyan.com/StarsGyanWebsiteDev/images/favicon.jpeg" sizes="192x192" />
     <link rel="apple-touch-icon" href="https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/uploads/2020/04/cropped-favicon-300x300.png" />
     <meta name="msapplication-TileImage"
