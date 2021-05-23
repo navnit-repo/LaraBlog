@@ -1,5 +1,5 @@
-@include('layouts._header')
-@include('layouts._navbar')
+@include('layouts._admin_header')
+@include('layouts._admin_navbar')
 @include('layouts._alert')
 <div class="main-container container-fluid no-padding">
     {{--<h1 class="text-center border-bottom" id="site-heading">{{$globalConfigs->site_title}}</h1>--}}
