@@ -1,15 +1,30 @@
+<section class="page_title  ds s-pt-130 s-pb-70   s-pt-xl-150  s-pt-sm-175      cover-background s-"
+				style="background-image:url('https://api.starsgyan.com/StarsGyanWebsiteDev/pictures/blog banner.jpg');">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-12">
+							<h1 style="color: #FFAF00">
+								Blog </h1>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item first-item"><a href="./">Home</a></li>
+								<li class="breadcrumb-item first-item text-white">Blog</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
 <section class="ds page_content s-py-90 s-py-xl-150 c-gutter-60">
 		<div class="container">
 		<div class="row">
 
-        <div id="content" class="col-8 col-xs-8 col-lg-8 column-main">
+        <div id="content" class="col-12 col-xs-12 col-lg-8 column-main">
         @forelse($articles as $article)
             <article id="post-1637"
                 class="text-center box-shadow ds bs bordered text-md-left vertical-item content-padding readmore-hidden post-1637 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-taro category-transit_chart tag-astrology tag-post">                
                 <div class="item-media entry-thumbnail post-thumbnail  ">
                  <a class="abs-link" href="{{route('get-article', [$article->id, make_slug($article->heading)])}}">
                     <img width="1200" height="560"
-                        src="../wp-content/uploads/2019/05/img_3-1200x560.jpg"
+                        src="https://www.starsgyan.com/wp-content/uploads/2019/05/img_3-1200x560.jpg"
                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />
                         </a>
                 </div> <!-- .item-media -->
@@ -31,10 +46,9 @@
 
                     <div class="entry-footer">
                         <div class="entry-meta">
-                            <span><a href="../2019/05/17/index.html"
-                                    rel="bookmark"><time class="published entry-date"
+                            <span><time class="published entry-date"
                                         datetime="2019-05-17T14:06:05+00:00">{{$article->publishedAtHuman}}</time>
-                                    </a></span> 
+                                    </span> 
                                     </div>
                         <div>
                             <span>
@@ -58,37 +72,21 @@
             <@endforeach 
         </div>
 
-                 <aside  class="col-4  col-xs-4 col-lg-4  column-sidebar">
+                 <aside  class="col-12  col-xs-12 col-lg-4  column-sidebar">
 							<div class="widget-odd affix-top widget-first widget-1 widget-theme-wrapper widget_no_background">
 								<div id="categories-4" class="widget widget_categories">
 									<h3 class="widget-title">Categories</h3>
 									<ul>
 										<li class="cat-item  text-dark cat-item-89">
                                            @foreach($navCategories as $category)
-                                            <a style="color: black;" href="{{route('articles-by-category', $category->alias)}}">{{$category->name}}</a>
+                                            <a style="color: black; width:100%; border-top: 0.5px solid #252839;;" href="{{route('articles-by-category', $category->alias)}}">{{$category->name}}</a>
                                             @endforeach
 										</li>
 									</ul>
 								</div>
 							</div>
 						
-							<div class="widget-odd widget-last widget-3 widget-theme-wrapper widget_no_background">
-								<div id="tag_cloud-3" class="widget widget_tag_cloud">
-									<h3 class="widget-title">Recent Post</h3>
-									<div class="tagcloud"><a href=""
-											class="tag-cloud-link tag-link-16 tag-link-position-1"
-											style="font-size: 16.75pt;" aria-label="Astrology (3 items)">Sample Post Format</a>
-										<a href="../tag/horoscope/index.html"
-											class="tag-cloud-link tag-link-19 tag-link-position-2"
-											style="font-size: 8pt;" aria-label="Horos../sample-post-formatcope (1 item)">Horoscope</a>
-										<a href="../tag/magic/index.html"
-											class="tag-cloud-link tag-link-22 tag-link-position-3"
-											style="font-size: 8pt;" aria-label="Magic (1 item)">Magic</a>
-										<a href="../tag/post/index.html"
-											class="tag-cloud-link tag-link-37 tag-link-position-4"
-										style="font-size: 22pt;" aria-label="Post (5 items)">Post</a></div>
-								</div>
-							</div>
+							
 						</aside>
 						<!-- eof main aside sidebar -->
 					</div><!-- eof .row-->
