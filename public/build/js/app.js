@@ -78965,6 +78965,34 @@ var render = function() {
           }
         })
       ]),
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.article_data.article_caption,
+              expression: "article_data.article_caption"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            name: "article_caption",
+            placeholder: "*article_caption",
+            required: ""
+          },
+          domProps: { value: _vm.article_data.article_caption },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.article_data, "article_caption", $event.target.value)
+            }
+          }
+        })
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "form-group" }, [
         _c(
