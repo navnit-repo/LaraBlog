@@ -1,5 +1,13 @@
 @extends('layouts.public')
 @section('content')
+<section class="ds page_content s-py-90 s-py-xl-150 c-gutter-60">
+		<div class="container">
+		<div class="row">
+
+        <div id="content" class="col-12 col-xs-12 col-lg-12 column-main">
+        <div class="pb-4">
+        <h4 class="entry-title mb-3 links-maincolor2">{{$article->heading}}</h4>
+        </div>
 <article id="post-1637" class="single-post vertical-item content-padding padding-big ds bs bordered box-shadow  post-1637 post type-post status-publish format-standard has-post-thumbnail hentry category-taro category-transit_chart tag-astrology tag-post">
         
 			<div class="item-media entry-thumbnail post-thumbnail  ">
@@ -19,4 +27,8 @@
             </div>
            </div>
 </article>
+</div>
+</div>
+</div>
+</section>
 @endsection
