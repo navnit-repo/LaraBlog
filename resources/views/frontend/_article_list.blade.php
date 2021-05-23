@@ -39,9 +39,7 @@
                     </div>
 
                     <div class="entry-content mt-35">
-                        <p>The boom in Millennial Astrology (for people born 1990 to 1995) means
-                            horoscopes are now known factors for anyone aged around 20, 21, 22, 23, 24,
-                            25, 26<br /></p>
+                        <p>{{$article->article_caption}}<br /></p>
                     </div><!-- .entry-content -->
 
                     <div class="entry-footer">
