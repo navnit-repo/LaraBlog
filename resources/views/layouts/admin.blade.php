@@ -12,5 +12,5 @@
         @yield('content')
     </div>
 </div>
-@include('layouts._footer')
+@include('layouts._admin_footer')
 
