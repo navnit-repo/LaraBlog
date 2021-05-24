@@ -53,12 +53,19 @@
                             <span class="hidden-sm">Users</span>
                         </a>
                     </li>
+                    <li class="{{Request::is('admin/gallery*') ? "active":""}}">
+                            <a href="{{route('gallery')}}">
+                                <span class="fa fa-hand-peace-o"></span>
+                                <span class="hidden-sm">Image Gallery</span>
+                            </a>
+                        </li>  
                         <li class="{{Request::is('admin/feedback*') ? "active":""}}">
                             <a href="{{route('feedbacks')}}">
                                 <span class="fa fa-hand-peace-o"></span>
                                 <span class="hidden-sm">User Feedback</span>
                             </a>
                         </li>
+                          
                 @endhasanyrole
                 @role('owner')
                     <li class="{{Request::is('admin/config*') ? "active":""}}">

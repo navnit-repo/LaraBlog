@@ -35,6 +35,12 @@
                     </li>
                 @endrole
                 @hasanyrole('owner|admin')
+                <li class="{{Request::is('admin/gallery*') ? "active":""}}">
+                            <a href="{{route('gallery.index')}}">
+                                <span class="fa fa-picture-o"></span>
+                                <span class="hidden-sm">Image Gallery</span>
+                            </a>
+                        </li>  
                     <li class="{{Request::is('admin/category*') ? "active":""}}">
                         <a href="{{route('categories')}}">
                             <span class="fa fa-share-alt"></span>
