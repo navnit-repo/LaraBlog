@@ -138,7 +138,7 @@ class ArticleController extends Controller
     {
         $clientIP = $_SERVER['REMOTE_ADDR'];
 
-        $newArticle = $request->only(['heading', 'content', 'category_id', 'language','article_caption']);
+        $newArticle = $request->only(['heading', 'content', 'category_id', 'language','article_caption','article_img']);
         $newArticle['is_comment_enabled'] = $request->input('is_comment_enabled');
         $newAddress = ['ip' => $clientIP];
 
@@ -150,6 +150,10 @@ class ArticleController extends Controller
             $newArticle['published_at'] = new \DateTime();
             $newArticle['user_id'] = Auth::user()->id;
             $newArticle = Article::create($newArticle);
+            // $new['Id'] = $newArticle->Id;
+            // $new['article_url'] = $request->get('article_img');
+            // print_r($new);
+            // ArticleImage::create($new);
             //add keywords
             $keywordsToAttach = array_unique(explode(' ', $request->get('keywords')));
             foreach ($keywordsToAttach as $keywordToAttach) {

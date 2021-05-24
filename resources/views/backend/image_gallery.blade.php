@@ -37,7 +37,6 @@
                                         <tr>
                                             <th>SN</th>
                                             <th>Image</th>
-                                            <th>Status</th>
                                             <th>Date/Time Added</th>
                                             <th>Operations</th>
                                         </tr>
@@ -48,13 +47,7 @@
                                         <tr>
                                             <td>{{ (($images->currentPage() - 1 ) * $images->perPage() ) + $loop->iteration }}</td>
                                             <td><img class="img-responsive thumbnail_img" src="{{  asset($image->src_thumbnail) }}" /></td>
-                                            <td>
-                                                @if($image->status == 1)
-                                                    <span class="enable">Active</span>
-                                                @else
-                                                    <span class="disable">Inactive</span>
-                                                @endif
-                                            </td>
+                                           
                                             <td>{{ $image->updated_at->format('F d, Y') }}</td>
                                             <td>
                                                 <!-- <form action="{{ route('gallery.update', $image->id) }}" method="post"
@@ -64,12 +57,20 @@
                                                     <input type="hidden" name="id" value="{{ $image->id }}" />
                                                     <button type="submit" class="btn btn-sm btn-info action_btn">Revert</button>
                                                 </form> -->
-                                                <button  class="btn btn-sm btn-info action_btn" onclick="copy_to_clipboard({{ $image->src }})">Copy Image Link</button>
+                                                
+                                                <i onclick="window.open('<?php echo asset($image->src) ?>','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;"
+                                                class="fa fa-eye" style="font-size: 3em; color:blue"></i>
+                                                
+                                                <i onclick="copy('<?php echo asset($image->src) ?>');"
+                                                class="fa fa-clipboard" style=" font-size: 2em; color:green"></i>
+                                                
                                                 <form action="{{ route('gallery.destroy', $image->id) }}" method="post"
                                                     onsubmit="return confirm('Are you sure you want to delete this record?');">
                                                     <input type="hidden" name="_method" value="DELETE" />
                                                     {{ csrf_field() }}
-                                                    <button type="submit" name="Delete" class="btn btn-sm btn-danger action_btn">Delete</button>
+                                                    <i onclick="copy('<?php echo asset($image->src) ?>');"
+                                                class="fa fa-del" style=" font-size: 2em; color:green"></i>
+                                                    <button type="submit" name="Delete" class="btn btn-sm btn-danger action_btn"><i style="font-size: 2em;" class="fa fa-trash"></i></button>
                                                 </form>
                                             </td>
                                         </tr>
@@ -97,8 +98,15 @@
 @endsection
 @section('inPageJS')
     <script type="application/javascript">
-        function copy_to_clipboard(link) {
-            alert(link)
+        function copy(link){
+            window.alert(link);
+            console.log("valskdfjalsdkfj");
+            var inp =document.createElement('input');
+            document.body.appendChild(inp)
+            inp.value =link;
+            inp.select();
+            document.execCommand('copy',false);
+            inp.remove();
         }    
     </script>
 @endsection

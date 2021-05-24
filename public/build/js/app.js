@@ -78979,7 +78979,7 @@ var render = function() {
           attrs: {
             type: "text",
             name: "article_caption",
-            placeholder: "*article_caption",
+            placeholder: "*Article_caption",
             required: ""
           },
           domProps: { value: _vm.article_data.article_caption },
@@ -78989,6 +78989,35 @@ var render = function() {
                 return
               }
               _vm.$set(_vm.article_data, "article_caption", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.article_data.article_img,
+              expression: "article_data.article_img"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: {
+            type: "text",
+            name: "article_img",
+            placeholder: "*Article Background Image URL",
+            required: ""
+          },
+          domProps: { value: _vm.article_data.article_img },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.article_data, "article_img", $event.target.value)
             }
           }
         })
