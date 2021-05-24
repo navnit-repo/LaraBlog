@@ -99,7 +99,6 @@
     <script type="application/javascript">
         function copy_to_clipboard(link) {
             alert(link)
-        }
-    }
+        }    
     </script>
 @endsection
