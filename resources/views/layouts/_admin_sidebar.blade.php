@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            {{--<a class="navbar-brand" href="#">Al- Imran Ahmed</a>--}}
+            {{--<a class="navbar-brand" href="#">StarsGyan Blog AdminPanel</a>--}}
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="sidebar">
@@ -35,12 +35,6 @@
                     </li>
                 @endrole
                 @hasanyrole('owner|admin')
-                <li class="{{Request::is('admin/gallery*') ? "active":""}}">
-                            <a href="{{route('gallery.index')}}">
-                                <span class="fa fa-picture-o"></span>
-                                <span class="hidden-sm">Image Gallery</span>
-                            </a>
-                        </li>  
                     <li class="{{Request::is('admin/category*') ? "active":""}}">
                         <a href="{{route('categories')}}">
                             <span class="fa fa-share-alt"></span>
@@ -59,12 +53,19 @@
                             <span class="hidden-sm">Users</span>
                         </a>
                     </li>
+                    <li class="{{Request::is('admin/gallery*') ? "active":""}}">
+                            <a href="{{route('gallery')}}">
+                                <span class="fa fa-hand-peace-o"></span>
+                                <span class="hidden-sm">Image Gallery</span>
+                            </a>
+                        </li>  
                         <li class="{{Request::is('admin/feedback*') ? "active":""}}">
                             <a href="{{route('feedbacks')}}">
                                 <span class="fa fa-hand-peace-o"></span>
                                 <span class="hidden-sm">User Feedback</span>
                             </a>
                         </li>
+                          
                 @endhasanyrole
                 @role('owner')
                     <li class="{{Request::is('admin/config*') ? "active":""}}">

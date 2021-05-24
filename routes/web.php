@@ -54,6 +54,8 @@ Route::group(['middleware' => ['auth', 'role:owner|admin|author']], function () 
     Route::post('admin/article', 'ArticleController@store')->name('store-article');
     Route::get('admin/article/{articleId}/edit', 'ArticleController@edit')->name('edit-article');
     Route::put('admin/article/{articleId}', 'ArticleController@update')->name('update-article');
+    Route::get('admin/gallery', 'ImageGalleryController@index')->name('gallery');
+    Route::resource('admin/gallery', 'ImageGalleryController');
 
     //Admin comments
     Route::get('admin/comment', 'CommentController@index')->name('comments');
@@ -106,6 +108,8 @@ Route::group(['middleware' => ['auth', 'role:owner|admin']], function () {
         ->name('toggle-keyword-active');
     Route::put('admin/keyword/{keywordId}', 'KeywordController@update')->name('update-keyword');
     Route::get('admin/keyword/{keywordId}/delete', 'KeywordController@destroy')->name('delete-keyword');
+    Route::get('admin/gallery', 'ImageGalleryController@index')->name('gallery');
+    Route::resource('admin/gallery', 'ImageGalleryController');
 });
 
 Route::group(['middleware' => ['auth', 'role:owner']], function () {
@@ -113,3 +117,4 @@ Route::group(['middleware' => ['auth', 'role:owner']], function () {
     Route::get('admin/config', 'ConfigController@index')->name('configs');
     Route::put('admin/config/{configId}', 'ConfigController@update')->name('update-config');
 });
+

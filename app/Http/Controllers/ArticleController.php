@@ -138,7 +138,7 @@ class ArticleController extends Controller
     {
         $clientIP = $_SERVER['REMOTE_ADDR'];
 
-        $newArticle = $request->only(['heading', 'content', 'category_id', 'language']);
+        $newArticle = $request->only(['heading', 'content', 'category_id', 'language','article_caption']);
         $newArticle['is_comment_enabled'] = $request->input('is_comment_enabled');
         $newAddress = ['ip' => $clientIP];
 

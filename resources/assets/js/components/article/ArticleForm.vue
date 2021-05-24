@@ -46,6 +46,17 @@
             <button type="submit" class="btn btn-success" id="submit-btn">Submit</button>
         </div>
     </form>
+    <form name="image-upload" id="image-upload" method="post" action="{{url('upload')}}" enctype="multipart/form-data">
+       @csrf
+        <div class="form-group">
+          <label for="exampleInputEmail1">Please Select Image</label>
+          <input type="file" id="image" name="image" class="@error('image') is-invalid @enderror form-control">
+          @error('image')
+              <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+          @enderror
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
 </template>
 
 <script>
