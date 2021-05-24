@@ -9,7 +9,9 @@
 
     <title>{{isset($article) ? $article->heading : $globalConfigs->site_title}}</title>
     <!-- CSS -->
-    <link href="{{ mix("build/css/app.css") }}" rel="stylesheet" type="text/css">
+    <!-- <link href="{{ mix("build/css/app.css") }}" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="https://api.starsgyan.com/StarsGyanBlog/public/build/css/app.css") }}" rel="stylesheet" type="text/css"> -->
+    <link href="{{asset('build/css/app.css') }}" rel="stylesheet" type="text/css">
 
     @include('layouts._google_analytics')
 </head>
