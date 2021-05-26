@@ -108,7 +108,7 @@ class ArticleController extends Controller
         if ($this->hasArticleAuthorization(Auth::user(), $article)) {
             return response()->json(['errorMsg' => 'Unauthorized request'], Response::HTTP_UNAUTHORIZED);
         }
-        $updatedArticle = $request->only(['heading', 'content', 'category_id', 'language']);
+        $updatedArticle = $request->only(['heading', 'content', 'category_id', 'language','article_caption','cover_image']);
         $updatedArticle['is_comment_enabled'] = $request->input('is_comment_enabled');
         $keywordsToAttach = array_unique(explode(' ', $request->get('keywords')));
         try {
@@ -138,7 +138,7 @@ class ArticleController extends Controller
     {
         $clientIP = $_SERVER['REMOTE_ADDR'];
 
-        $newArticle = $request->only(['heading', 'content', 'category_id', 'language','article_caption','article_img']);
+        $newArticle = $request->only(['heading', 'content', 'category_id', 'language','article_caption','cover_image']);
         $newArticle['is_comment_enabled'] = $request->input('is_comment_enabled');
         $newAddress = ['ip' => $clientIP];
 
@@ -150,10 +150,7 @@ class ArticleController extends Controller
             $newArticle['published_at'] = new \DateTime();
             $newArticle['user_id'] = Auth::user()->id;
             $newArticle = Article::create($newArticle);
-            // $new['Id'] = $newArticle->Id;
-            // $new['article_url'] = $request->get('article_img');
-            // print_r($new);
-            // ArticleImage::create($new);
+               
             //add keywords
             $keywordsToAttach = array_unique(explode(' ', $request->get('keywords')));
             foreach ($keywordsToAttach as $keywordToAttach) {

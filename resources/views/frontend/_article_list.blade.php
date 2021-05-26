@@ -24,8 +24,9 @@
                 <div class="item-media entry-thumbnail post-thumbnail  ">
                  <a class="abs-link" href="{{route('get-article', [$article->id, make_slug($article->heading)])}}">
                     <img width="1200" height="560"
-                        src="https://www.starsgyan.com/wp-content/uploads/2019/05/img_3-1200x560.jpg"
-                        class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />
+                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" 
+                        src="{{ ($article->cover_image) }}"
+                        />
                         </a>
                 </div> <!-- .item-media -->
 
@@ -54,6 +55,16 @@
                                     Now<i class="fa fa-caret-right color-main ml-2"></i></a>
                             </span>
                         </div>
+                    </div>
+
+                    <div class="meta-wrap">
+                        <div class="tag-wrapper mt-30">
+                            @foreach($article->keywords as $keyword)
+                            <span class="tag-links">
+                            <a href="{{route('articles-by-keyword', [$keyword->name])}}" rel="tag">{{$keyword->name}}</a>
+                            </span>
+                            @endforeach    
+                            </div>
                     </div>
                 </div><!-- eof .item-content -->
             </article>

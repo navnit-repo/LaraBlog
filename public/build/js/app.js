@@ -79000,24 +79000,24 @@ var render = function() {
             {
               name: "model",
               rawName: "v-model",
-              value: _vm.article_data.article_img,
-              expression: "article_data.article_img"
+              value: _vm.article_data.cover_image,
+              expression: "article_data.cover_image"
             }
           ],
           staticClass: "form-control",
           attrs: {
             type: "text",
-            name: "article_img",
+            name: "cover_image",
             placeholder: "*Article Background Image URL",
             required: ""
           },
-          domProps: { value: _vm.article_data.article_img },
+          domProps: { value: _vm.article_data.cover_image },
           on: {
             input: function($event) {
               if ($event.target.composing) {
                 return
               }
-              _vm.$set(_vm.article_data, "article_img", $event.target.value)
+              _vm.$set(_vm.article_data, "cover_image", $event.target.value)
             }
           }
         })
