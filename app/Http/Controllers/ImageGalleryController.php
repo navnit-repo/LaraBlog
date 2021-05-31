@@ -51,22 +51,20 @@ class ImageGalleryController extends Controller
 
             $org_img = $thm_img = true;
 
-            if( ! File::exists('images/gallery/originals/')) {
+	   if( ! File::isDirectory(public_path('images/gallery/originals/'))) {
                 $org_img = File::makeDirectory(public_path('images/gallery/originals/'), 0777, true);
             }
-            if ( ! File::exists('images/gallery/thumbnails/')) {
+            if ( ! File::isDirectory(public_path('images/gallery/thumbnails/'))) {
                 $thm_img = File::makeDirectory(public_path('images/gallery/thumbnails'), 0777, true);
             }
-
             foreach($images as $key => $image) {
 
                 $gallery = new GalleryImage;
 
                 $filename = rand(1111,9999).time().'.'.$image->getClientOriginalExtension();
 
-                $org_path = 'images/gallery/originals/' . $filename;
-                $thm_path = 'images/gallery/thumbnails/' . $filename;
-
+		$org_path = public_path('images/gallery/originals/' . $filename);
+                $thm_path = public_path('images/gallery/thumbnails/' . $filename);
                 $gallery->src     = 'images/gallery/originals/'.$filename;
                 $gallery->src_thumbnail = 'images/gallery/thumbnails/'.$filename;
                 $gallery->caption     = $request->title;
@@ -78,9 +76,7 @@ class ImageGalleryController extends Controller
                 }
 
                if (($org_img && $thm_img) == true) {
-                   Image::make($image)->fit(900, 500, function ($constraint) {
-                           $constraint->upsize();
-                       })->save($org_path);
+                   Image::make($image)->save($org_path);
                    Image::make($image)->fit(270, 160, function ($constraint) {
                        $constraint->upsize();
                    })->save($thm_path);

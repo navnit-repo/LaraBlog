@@ -11,7 +11,9 @@
     <!-- CSS -->
     <!-- <link href="{{ mix("build/css/app.css") }}" rel="stylesheet" type="text/css"> -->
     <!-- <link href="https://api.starsgyan.com/StarsGyanBlog/public/build/css/app.css") }}" rel="stylesheet" type="text/css"> -->
-    <link href="{{asset('build/css/app.css') }}" rel="stylesheet" type="text/css">
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="{{asset('public/build/css/app.css') }}" rel="stylesheet" type="text/css">
 
     @include('layouts._google_analytics')
 </head>

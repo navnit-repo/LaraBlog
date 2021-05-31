@@ -46,7 +46,7 @@
                                         @foreach ($images as $image)
                                         <tr>
                                             <td>{{ (($images->currentPage() - 1 ) * $images->perPage() ) + $loop->iteration }}</td>
-                                            <td><img class="img-responsive thumbnail_img" src="{{  asset($image->src_thumbnail) }}" /></td>
+                                            <td><img class="img-responsive thumbnail_img" src="{{  asset('public/'.$image->src_thumbnail) }}" /></td>
                                            
                                             <td>{{ $image->updated_at->format('F d, Y') }}</td>
                                             <td>
@@ -58,10 +58,10 @@
                                                     <button type="submit" class="btn btn-sm btn-info action_btn">Revert</button>
                                                 </form> -->
                                                 
-                                                <i onclick="window.open('<?php echo asset($image->src) ?>','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;"
+                                                <i onclick="window.open('<?php echo asset('public/'.$image->src) ?>','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;"
                                                 class="fa fa-eye" style="font-size: 3em; color:blue"></i>
                                                 
-                                                <i onclick="copy('<?php echo asset($image->src) ?>');"
+                                                <i onclick="copy('<?php echo asset('public/'.$image->src) ?>');"
                                                 class="fa fa-clipboard" style=" font-size: 2em; color:green"></i>
                                                 
                                                 <form action="{{ route('gallery.destroy', $image->id) }}" method="post"

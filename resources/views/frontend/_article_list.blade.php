@@ -16,21 +16,33 @@
 <section class="ds page_content s-py-90 s-py-xl-150 c-gutter-60">
 		<div class="container">
 		<div class="row">
+	
 
-        <div id="content" class="col-12 col-xs-12 col-lg-8 column-main">
+        <div id="content" class="col-12 col-xs-12 col-lg-9 column-main">
+        
         @forelse($articles as $article)
             <article id="post-1637"
-                class="text-center box-shadow ds bs bordered text-md-left vertical-item content-padding readmore-hidden post-1637 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-taro category-transit_chart tag-astrology tag-post">                
+                class="text-center box-shadow ds bs bordered text-md-left vertical-item content-padding readmore-hidden post-1637 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-taro category-transit_chart tag-astrology tag-post">
+            				                
                 <div class="item-media entry-thumbnail post-thumbnail  ">
                  <a class="abs-link" href="{{route('get-article', [$article->id, make_slug($article->heading)])}}">
-                    <img width="1200" height="560"
+                    <img width="1200" height="350"
                     class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" 
                         src="{{ ($article->cover_image) }}"
                         />
                         </a>
-                </div> <!-- .item-media -->
+                </div>
+                <!--<a class="abs-link" href="{{route('get-article', [$article->id, make_slug($article->heading)])}}">
+                <img width="700" height="355"
+    class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" 
+        src="https://api.starsgyan.com/StarsGyanWebsiteDev/blog7.jpg"/> 
+        </a>-->
+                <!--<img width="700" height="355"
+    class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" 
+        src="{{ ($article->cover_image) }}"/>-->
+                <!-- .item-media -->
 
-                <div class="item-content  with-share">
+                <div class="item-content  with-share" style="padding:0">
                     <div class="entry-header">
                         <span class="cat-links">
                             <a href="{{route('articles-by-category', $article->category->alias)}}">{{$article->category->name}}</a>
@@ -40,7 +52,7 @@
                     </div>
 
                     <div class="entry-content mt-35">
-                        <p>{{$article->article_caption}}<br /></p>
+                        <p style="color:#757575">{{$article->article_caption}}<br /></p>
                     </div><!-- .entry-content -->
 
                     <div class="entry-footer">
@@ -50,14 +62,14 @@
                                     </span> 
                                     </div>
                         <div>
-                            <span>
-                                <a href="{{route('get-article', [$article->id, make_slug($article->heading)])}}" class="mt-30 font-2">Read
-                                    Now<i class="fa fa-caret-right color-main ml-2"></i></a>
+                            <span class="read">
+                                <a href="{{route('get-article', [$article->id, make_slug($article->heading)])}}" class="mt-30 font-2" >Read
+                                   Now<i class="fa fa-caret-right color-main ml-2"></i></a>
                             </span>
                         </div>
                     </div>
 
-                    <div class="meta-wrap">
+                    <!--<div class="meta-wrap">
                         <div class="tag-wrapper mt-30">
                             @foreach($article->keywords as $keyword)
                             <span class="tag-links">
@@ -65,20 +77,20 @@
                             </span>
                             @endforeach    
                             </div>
-                    </div>
+                    </div>-->
                 </div><!-- eof .item-content -->
             </article>
-            <@endforeach 
+            @endforeach 
         </div>
 
-                 <aside  class="col-12  col-xs-12 col-lg-4  column-sidebar">
+                 <aside  class="col-12  col-xs-12 col-lg-3  column-sidebar">
 							<div class="widget-odd affix-top widget-first widget-1 widget-theme-wrapper widget_no_background">
 								<div id="categories-4" class="widget widget_categories">
-									<h3 class="widget-title">Categories</h3>
+									<h3 class="widget-title" style="font-weight:600">Categories</h3>
 									<ul>
 										<li class="cat-item  text-dark cat-item-89">
                                            @foreach($navCategories as $category)
-                                            <a style="color: black; width:100%; border-top: 0.5px solid #252839;;" href="{{route('articles-by-category', $category->alias)}}">{{$category->name}}</a>
+                                            <a style="width:100%; border-top: 0.5px solid #252839;;" href="{{route('articles-by-category', $category->alias)}}">{{$category->name}}</a>
                                             @endforeach
 										</li>
 									</ul>

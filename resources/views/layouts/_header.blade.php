@@ -95,6 +95,7 @@
 	</style>
 	<link rel='stylesheet' id='font-awesome-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/css/font-awesome-ver-1.0.0.css' media='all' />
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
 	<link rel='stylesheet' id='wp-block-library-css'
 		href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-includes/css/dist/block-library/style.min-ver=5.4.2.css' media='all' />
 	<link rel='stylesheet' id='wp-block-library-theme-css'
@@ -126,8 +127,35 @@
 	<link rel='stylesheet' id='xoo-wsc-css'
 		href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/side-cart-woocommerce/public/css/xoo-wsc-public-ver=2.0.css' media='all' />
 		
+		
 <style>
 
+   .cat-links a:not(.btn) {
+    color: #FFAF00 !important;
+}
+
+.cat-links a:not(.btn):hover {
+    color: #851f37 !important;
+}
+ 
+.links-maincolor2:hover{
+	color:#EF7F1A;
+}
+
+.read a:not(.btn) {
+    color: #851f37 !important;
+}
+
+.read a:not(.btn):hover {
+    color: #EF7F1A !important;
+}
+.cat-item a:not(.btn) {
+    color: #757575 !important;
+}
+
+.cat-item a:not(.btn):hover {
+    color: #EF7F1A !important;
+}
     .astext{
     background:none;
     border:none;
@@ -193,9 +221,11 @@
         background: #ca6730;
 	}
 	.ds.bs {
-		background-color: black;
-	}
-	
+    background-color: #fff !important;
+}
+	.ds.bs .bordered, .ds.bs.bordered {
+    border-color: #fff !important;
+}
 </style>
 	<style id='xoo-wsc-inline-css'>
 		.xoo-wsc-ctxt {
@@ -433,9 +463,11 @@
 	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-includes/js/wp-embed.min-ver=5.4.2.js'></script>
 	<link rel="icon" href="https://api.starsgyan.com/StarsGyanWebsiteDev/images/favicon.jpeg" sizes="32x32" />
     <link rel="icon" href="https://api.starsgyan.com/StarsGyanWebsiteDev/images/favicon.jpeg" sizes="192x192" />
-    <link rel="apple-touch-icon" href="https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/uploads/2020/04/cropped-favicon-300x300.png" />
+    <!--<link rel="apple-touch-icon" href="https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/uploads/2020/04/cropped-favicon-300x300.png" />
     <meta name="msapplication-TileImage"
-        content="http://webdesign-finder.com/magia/wp-content/uploads/2020/04/cropped-favicon-300x300.png" />
+        content="http://webdesign-finder.com/magia/wp-content/uploads/2020/04/cropped-favicon-300x300.png" />-->
+        <meta name="msapplication-TileImage"
+        content="https://api.starsgyan.com/StarsGyanWebsiteDev/images/favicon.jpeg" />
 </head>
 <body>
 
