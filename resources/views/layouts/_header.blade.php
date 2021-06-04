@@ -134,6 +134,10 @@
     color: #FFAF00 !important;
 }
 
+.a_tag a:not(.btn) {
+    color: black;
+}
+
 .cat-links a:not(.btn):hover {
     color: #851f37 !important;
 }

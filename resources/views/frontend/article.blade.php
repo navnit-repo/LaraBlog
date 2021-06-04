@@ -28,7 +28,7 @@
             <div class="divider-20 divider-xl-40"></div>
 
             <div class="entry-content">
-            <div class="col-sm-12 text-md" style="padding-left:0">{!! $article->contentAsHtml !!}</div>
+            <div class="col-sm-12 text-md a_tag" style="padding-left:0">{!! $article->contentAsHtml !!}</div>
             </div>
            </div>
 </article>
