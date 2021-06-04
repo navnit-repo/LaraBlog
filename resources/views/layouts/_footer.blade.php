@@ -5,7 +5,7 @@
                             <div
                                 class="widget-odd widget-last widget-first widget-1 widget-theme-wrapper widget_no_background">
                                 <div id="mwt_bloginfo-5" class="widget widget_bloginfo"> <a class="blog-info-logo"
-                                        href="./" target="_blank">
+                                        href="https://www.starsgyan.com/" target="_blank">
                                         <img src="https://api.starsgyan.com/StarsGyanWebsiteDev/Starsgyan_logo_footer.png" class="w-50" alt="Logo">
                                     </a>
                                 </div>
@@ -21,16 +21,16 @@
                                         <ul id="menu-footer_menu" class="menu">
                                             <li id="menu-item-5498"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5498">
-                                                <a href="./shopping.html">Shop</a></li>
+                                                <a href="https://www.starsgyan.com/shopping.html">Shop</a></li>
                                             <li id="menu-item-5499"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5499">
-                                                <a href="./services">Services</a></li>
+                                                <a href="https://www.starsgyan.com/services">Services</a></li>
                                             <li id="menu-item-5500"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5500">
-                                                <a href="./astrologersform.html">Join</a></li>
+                                                <a href="https://www.starsgyan.com/astrologersform.html">Join</a></li>
                                             <li id="menu-item-5503"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5503">
-                                                <a href="./contacts.html">Contact Us</a></li>
+                                                <a href="https://www.starsgyan.com/contacts.html">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -46,19 +46,19 @@
                                         <ul id="menu-footer_menu2" class="menu">
                                             <li id="menu-item-5501"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5501">
-                                                <a href="./blog.html">Blog</a></li>
+                                                <a href="https://www.starsgyan.com/blog.html">Blog</a></li>
                                             <li id="menu-item-5502"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5502">
-                                                <a href="./about.html">About</a></li>
+                                                <a href="https://www.starsgyan.com/about.html">About</a></li>
                                             <li id="menu-item-5503"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5503">
-                                                <a href="./tc.html" target="_blank">Terms & Conditions</a></li>
+                                                <a href="https://www.starsgyan.com/tc.html" target="_blank">Terms & Conditions</a></li>
                                             <li id="menu-item-5503"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5503">
-                                                <a href="./tc.html" target="_blank">Return Refund & Cancellation Policy</a></li>
+                                                <a href="https://www.starsgyan.com/tc.html" target="_blank">Return Refund & Cancellation Policy</a></li>
                                             <li id="menu-item-5503"
                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5503">
-                                                <a href="./policy.html" target="_blank">Privacy Policies</a></li>
+                                                <a href="https://www.starsgyan.com/policy.html" target="_blank">Privacy Policies</a></li>
                                         </ul>
                                     </div>
                                 </div>

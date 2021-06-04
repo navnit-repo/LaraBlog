@@ -195,7 +195,7 @@
 }
     /*@media (min-width: 1200px) {
 
-        .ds .sf-menu>li>a:hover,
+       .ds .sf-menu>li>a:hover,
         .ds .sf-menu>li.active>a {
             color: white;
         }
@@ -515,45 +515,45 @@
                                         style="touch-action: pan-y;">
                                         <li id="menu-item-1750"
                                             class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1750 active">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/" class="sf-with-">Home</a>
+                                            <a href="https://www.starsgyan.com/" class="sf-with-">Home</a>
 
                                         </li>
                                         <li id="menu-item-1800"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1800">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/about.html">About</a></li>
+                                            <a href="https://www.starsgyan.com/about.html">About</a></li>
 
 
                                         <li id="menu-item-3223"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3223">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/astrologers.html">Astrologers</a></li>
+                                            <a href="https://www.starsgyan.com/astrologers.html">Astrologers</a></li>
 
                                         <li id="menu-item-1330"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1330">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/astrologersform.html">Join</a>
+                                            <a href="https://www.starsgyan.com/astrologersform.html">Join</a>
                                         </li>
 
                                         <li id="menu-item-1330"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1330">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/services">Services</a>
+                                            <a href="https://www.starsgyan.com/services">Services</a>
                                         </li>
                                         <li id="menu-item-1330"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1330">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/panchang.html">Panchang</a>
+                                            <a href="https://www.starsgyan.com/panchang.html">Panchang</a>
                                         </li>
 
                                         <li id="menu-item-1330"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1330">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/shopping.html">AstroMall</a>
+                                            <a href="https://www.starsgyan.com/shopping.html">AstroMall</a>
                                         </li>
                                         
                                         <li id="menu-item-1330"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1330">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/use.html">How to use</a>
+                                            <a href="https://www.starsgyan.com/use.html">How to use</a>
                                         </li>
 
                                         <li id="menu-item-1330"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1330">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/blog.html">Blog</a>
+                                            <a href="https://www.starsgyan.com/blog.html">Blog</a>
                                         </li>
                                     </ul>
                                 </nav>
