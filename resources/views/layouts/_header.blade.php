@@ -8,7 +8,7 @@
 	<meta name="robots" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
     <link rel="canonical" href="https://www.starsgyan.com/blog.html" />
-	<title>Online Blogs of Starsgyan Astrologers | Online Astrologers Predictions</title>
+	<title>{{isset($article) ? $article->heading : "Online Blogs of Starsgyan Astrologers | Online Astrologers Predictions"}}</title>
 	<meta name="description"  content="Starsgyan Astrologers write own blogs time to time for our readers on Astrology, Vastu, Numerology, Horoscope reading and matching, Tarot and other related services of occult science.">
     <meta name="keywords" content="Online astrology prediction, Indian astrologers online, Astrology reading online, Horoscope predictions, Vastu consultant, Tarot astrology, Palmistry, Numerology predictions online">
 	<link rel='dns-prefetch' href='http://fonts.googleapis.com' />
@@ -134,9 +134,7 @@
     color: #FFAF00 !important;
 }
 
-.a_tag a:not(.btn) {
-    color: black;
-}
+
 
 .cat-links a:not(.btn):hover {
     color: #851f37 !important;
@@ -571,7 +569,7 @@
                                             <span class=""></span>
                                         </a>
 
-                                        <a href="https://twitter.com" target="_blank" class="fa fa-tumblr  " style="color: white;">
+                                        <a href="https://twitter.com/starsgyan" target="_blank" class="fa fa-tumblr  " style="color: white;">
                                             <span class=""></span>
                                         </a>
 
@@ -599,4 +597,3 @@
             </div>
 			<!--.header_absolute-->
 			<!--.page_title-->
-             

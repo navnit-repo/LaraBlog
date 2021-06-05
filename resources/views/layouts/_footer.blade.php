@@ -80,7 +80,7 @@
                                             <span class=""></span>
                                         </a>
 
-                                        <a href="https://twitter.com/" target="_blank" class="fa fa-tumblr  " style="color: white;">
+                                        <a href="https://twitter.com/starsgyan" target="_blank" class="fa fa-tumblr  " style="color: white;">
                                             <span class=""></span>
                                         </a>
 
