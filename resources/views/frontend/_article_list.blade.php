@@ -25,7 +25,7 @@
                 class="text-center box-shadow ds bs bordered text-md-left vertical-item content-padding readmore-hidden post-1637 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-taro category-transit_chart tag-astrology tag-post">
             				                
                 <div class="item-media entry-thumbnail post-thumbnail  ">
-                 <a class="abs-link" href="{{route('get-article', [$article->id, make_slug($article->heading)])}}">
+                 <a class="abs-link" href="{{route('get-article-with-heading', [$article->category->alias, make_slug($article->heading)])}}">
                     <img width="1200" height="350"
                     class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" 
                         src="{{ ($article->cover_image) }}"
@@ -47,7 +47,7 @@
                         <span class="cat-links">
                             <a href="{{route('articles-by-category', $article->category->alias)}}">{{$article->category->name}}</a>
                         </span>
-                            <a class="fs-30" href="{{route('get-article', [$article->id, make_slug($article->heading)])}}" rel="bookmark">
+                            <a class="fs-30" href="{{route('get-article-with-heading', [$article->category->alias, make_slug($article->heading)])}}" rel="bookmark">
                             <h4 class="entry-title mb-3 links-maincolor2">{{$article->heading}}</h4></a>
                     </div>
 
@@ -63,7 +63,7 @@
                                     </div>
                         <div>
                             <span class="read">
-                                <a href="{{route('get-article', [$article->id, make_slug($article->heading)])}}" class="mt-30 font-2" >Read
+                                <a href="{{route('get-article-with-heading', [$article->category->alias, make_slug($article->heading)])}}" class="mt-30 font-2" >Read
                                    Now<i class="fa fa-caret-right color-main ml-2"></i></a>
                             </span>
                         </div>
@@ -96,6 +96,18 @@
 									</ul>
 								</div>
 							</div>
+						  <!-- <div class="widget-odd widget-last widget-3 widget-theme-wrapper widget_no_background">
+						   <div id="tag_cloud-3" class="widget widget_tag_cloud">
+                	       <h3 class="widget-title">Recent Post</h3>
+                	       <div class="tagcloud" >
+                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt;" aria-label="Astrology (3 items)">{{$article->heading}}</a>
+                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt;" aria-label="Astrology (3 items)">{{$article->heading}}</a>
+                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt;" aria-label="Astrology (3 items)">{{$article->heading}}</a>
+                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt;" aria-label="Astrology (3 items)">{{$article->heading}}</a>
+                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt;" aria-label="Astrology (3 items)">{{$article->heading}}</a>
+                           </div>
+                            </div>
+                            </div>--> 
 						
 							
 						</aside>
