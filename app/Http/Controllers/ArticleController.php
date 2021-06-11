@@ -23,6 +23,47 @@ class ArticleController extends Controller
         return view('frontend.articles', compact('articles'));
     }
 
+	public function showWithHeading($categoryAlias, $articleHeading)
+    {
+
+        $category = Category::where('alias', $categoryAlias)->first();
+        if (is_null($category)) {
+            return redirect()->route('home')->with('warningMsg', 'Category not found');           
+        }
+        $articleHeading = trim(str_replace("-"," ",$articleHeading));
+        $article = Article::where('category_id', $category->id)
+        ->where('heading','like', $articleHeading.'%')
+            ->published()
+            ->notDeleted()
+            ->with(
+                [
+                    'user',
+                    'category',
+                    'keywords',
+                    'comments' => function ($comments) {
+                        return $comments->published();
+                    },
+                    'comments.user',
+                    'comments.replies' => function ($replies) {
+                        return $replies->published();
+                    },
+                    'comments.replies.user'
+                ]
+            )->first();
+
+        if (is_null($article)) {
+            return redirect()->route('home')->with('warningMsg', 'Article not found');            
+        }
+
+        //$clientIP = $_SERVER['REMOTE_ADDR'] ?? '';
+        //event(new ArticleHit($article, $clientIP));
+
+        $article->isEditable = $this->isEditable($article);
+
+        $relatedArticles = $this->getRelatedArticles($article);
+
+        return view('frontend.article', compact('article', 'relatedArticles'));
+    }
     public function show($articleId, $articleHeading = '')
     {
         $article = Article::where('id', $articleId)

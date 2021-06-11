@@ -597,5 +597,4 @@
             </div>
 			<!--.header_absolute-->
 			<!--.page_title-->
-			<!--{{isset($article) ? $article->heading : $globalConfigs->site_title}}-->
              
