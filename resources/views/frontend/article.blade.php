@@ -33,19 +33,31 @@
            </div>
 </article>
 </div>
-               <aside  class="col-12  col-xs-12 col-lg-3  column-sidebar">
+              <aside  class="col-12  col-xs-12 col-lg-3  column-sidebar">
 							<div class="widget-odd affix-top widget-first widget-1 widget-theme-wrapper widget_no_background">
 								<div id="categories-4" class="widget widget_categories">
 									<h3 class="widget-title" style="font-weight:600">Categories</h3>
-									<ul>
+									<ul style="height:272px; overflow-y:scroll;">
 										<li class="cat-item  text-dark cat-item-89">
                                            @foreach($navCategories as $category)
-                                            <a style="width:100%; border-top: 0.5px solid #252839;;" href="{{route('articles-by-category', $category->alias)}}">{{$category->name}}</a>
+                                            <a style="width:100%; border-top: 0.5px solid #e8e8e8;padding:5px;" href="{{route('articles-by-category', $category->alias)}}">{{$category->name}}</a>
                                             @endforeach
 										</li>
 									</ul>
 								</div>
 							</div>
+						  <div class="widget-odd widget-last widget-3 widget-theme-wrapper widget_no_background">
+						   <div id="tag_cloud-3" class="widget widget_tag_cloud">
+                	       <h3 class="widget-title">Recent Post</h3>
+                	       <div class="tagcloud" style="border-bottom:0.5px solid #e8e8e8">
+                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt; min-width:222px;" aria-label="Astrology (3 items)">What are sun sign and why are they important</a>
+                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt; min-width:222px;" aria-label="Astrology (3 items)">What are sun sign and why are they important</a>
+                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt; min-width:222px;" aria-label="Astrology (3 items)">What are sun sign and why are they important</a>
+                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt; min-width:222px;" aria-label="Astrology (3 items)">What are sun sign and why are they important</a>
+                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt; min-width:222px;" aria-label="Astrology (3 items)">What are sun sign and why are they important</a>
+                           </div>
+                            </div>
+                            </div>
 						
 							
 						</aside>
