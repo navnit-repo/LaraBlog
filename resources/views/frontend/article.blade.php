@@ -48,14 +48,14 @@
 							</div>
 						  <div class="widget-odd widget-last widget-3 widget-theme-wrapper widget_no_background">
 						   <div id="tag_cloud-3" class="widget widget_tag_cloud">
+						   @isset($recentArticles)
                 	       <h3 class="widget-title">Recent Post</h3>
                 	       <div class="tagcloud" style="border-bottom:0.5px solid #e8e8e8">
-                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt; min-width:222px;" aria-label="Astrology (3 items)">What are sun sign and why are they important</a>
-                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt; min-width:222px;" aria-label="Astrology (3 items)">What are sun sign and why are they important</a>
-                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt; min-width:222px;" aria-label="Astrology (3 items)">What are sun sign and why are they important</a>
-                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt; min-width:222px;" aria-label="Astrology (3 items)">What are sun sign and why are they important</a>
-                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt; min-width:222px;" aria-label="Astrology (3 items)">What are sun sign and why are they important</a>
-                           </div>
+						   @forelse($recentArticles as $rarticle)
+                	       <a href="{{route('get-article-with-heading', [$rarticle->category->alias, make_slug($rarticle->heading)])}}" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt; min-width:auto;" aria-label="Astrology (3 items)">{{$rarticle->heading}}</a>
+                           @endforeach 
+						   </div>
+						   @endisset
                             </div>
                             </div>
 						

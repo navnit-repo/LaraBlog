@@ -59,8 +59,11 @@ class CategoryController extends Controller
     public function getArticles(Request $request, $categoryAlias)
     {
         $articles = Article::getPaginate($request);
-
-        return view('frontend.articles', compact('articles'));
+        $recentArticles = Article::published()
+        ->latest()
+        ->take(5)
+        ->get();
+        return view('frontend.articles', compact('articles','recentArticles'));
     }
 
     public function destroy($categoryId)
