@@ -18,14 +18,14 @@
 		<div class="row">
 		<div class= col-lg-2 style="order:3">	
         
-	     <div class="widget-odd widget-last widget-3 widget-theme-wrapper widget_no_background">
+	     <div class="widget-odd widget-last widget-3 widget-theme-wrapper widget_no_background mt-5 mt-md-0">
         
 						   <div id="tag_cloud-3" class="widget widget_tag_cloud">
                            @isset($recentArticles)
                 	       <h3 class="widget-title">Recent Post</h3>
                 	       <div class="tagcloud" style="border-bottom:0.5px solid #e8e8e8">
                            @forelse($recentArticles as $rarticle)
-                	       <a href="{{route('get-article-with-heading', [$rarticle->category->alias, make_slug($rarticle->heading)])}}" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt; min-width:auto;" aria-label="Astrology (3 items)">{{$rarticle->heading}}</a>
+                	       <a href="{{route('get-article-with-heading', [$rarticle->category->alias, make_slug($rarticle->heading)])}}" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 14px !important; width:100%;" aria-label="Astrology (3 items)">{{$rarticle->heading}}</a>
                            @endforeach 
                            </div>
                            @endisset
@@ -98,12 +98,12 @@
                 </div><!-- eof .item-content -->
             </article>
             @endforeach 
-            <div style="margin-top:100px">
+            <div style="margin-top:50px">
             {{method_exists($articles, 'links') ? $articles->links() : ''}}
             </div>
         </div>
                 
-                 <aside  class="col-12  col-xs-12 col-lg-2  column-sidebar  tmc" style="order:1">
+                 <aside  class="col-12  col-xs-12 col-lg-2  column-sidebar d-none d-md-block tmc" style="order:1">
                  	<div>
 							<div class="widget-odd affix-top widget-first widget-1 widget-theme-wrapper widget_no_background">
 								<div id="categories-4" class="widget widget_categories">

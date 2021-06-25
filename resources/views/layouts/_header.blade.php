@@ -312,7 +312,7 @@
 	<link rel='stylesheet' id='magia-google-font-css'
 		href='http://fonts.googleapis.com/css?family=Poppins:300,300i,400,500,700%7CEl+Messiri:300,400,500,600,700&subset=latin-ext&ver=1.0.0'
 		media='all' />
-	<link rel='stylesheet' id='magia-woo-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/css/shop-ver=1.0.0.css' media='all' />
+	<link rel='stylesheet' id='magia-woo-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/css/shop-ver-1.0.0.css' media='all' />
 	<link rel='stylesheet' id='magia-accesspress-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/css/accesspress-ver=1.0.0.css'
 		media='all' />
 	<link rel='stylesheet' id='bootstrap-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/css/bootstrap.min-ver-1.0.0.css'
