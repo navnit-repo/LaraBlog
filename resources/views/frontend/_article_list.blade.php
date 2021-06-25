@@ -13,12 +13,29 @@
 					</div>
 				</div>
 			</section>
-<section class="ds page_content s-py-90 s-py-xl-150 c-gutter-60">
-		<div class="container">
+        <section class="ds page_content s-py-90 s-py-xl-150 c-gutter-60">
+		<div class="container-fluid">
 		<div class="row">
-	
+		<div class= col-lg-2 style="order:3">	
+        
+	     <div class="widget-odd widget-last widget-3 widget-theme-wrapper widget_no_background mt-5 mt-md-0">
+        
+						   <div id="tag_cloud-3" class="widget widget_tag_cloud">
+                           @isset($recentArticles)
+                	       <h3 class="widget-title">Recent Post</h3>
+                	       <div class="tagcloud" style="border-bottom:0.5px solid #e8e8e8">
+                           @forelse($recentArticles as $rarticle)
+                	       <a href="{{route('get-article-with-heading', [$rarticle->category->alias, make_slug($rarticle->heading)])}}" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 14px !important; width:100%;" aria-label="Astrology (3 items)">{{$rarticle->heading}}</a>
+                           @endforeach 
+                           </div>
+                           @endisset
+                            </div>
+                     </div>
+            
+             </div>   
+        
 
-        <div id="content" class="col-12 col-xs-12 col-lg-9 column-main">
+        <div id="content" class="col-12 col-xs-12 col-lg-8 column-main" style="order:2">
         
         @forelse($articles as $article)
             <article id="post-1637"
@@ -81,38 +98,31 @@
                 </div><!-- eof .item-content -->
             </article>
             @endforeach 
+            <div style="margin-top:50px">
+            {{method_exists($articles, 'links') ? $articles->links() : ''}}
+            </div>
         </div>
-
-                 <aside  class="col-12  col-xs-12 col-lg-3  column-sidebar">
+                
+                 <aside  class="col-12  col-xs-12 col-lg-2  column-sidebar d-none d-md-block tmc" style="order:1">
+                 	<div>
 							<div class="widget-odd affix-top widget-first widget-1 widget-theme-wrapper widget_no_background">
 								<div id="categories-4" class="widget widget_categories">
 									<h3 class="widget-title" style="font-weight:600">Categories</h3>
 									<ul>
 										<li class="cat-item  text-dark cat-item-89">
                                            @foreach($navCategories as $category)
-                                            <a style="width:100%; border-top: 0.5px solid #252839;;" href="{{route('articles-by-category', $category->alias)}}">{{$category->name}}</a>
+                                            <a style="width:100%; border-top: 0.5px solid #e8e8e8;padding:5px; font-size:14px;" href="{{route('articles-by-category', $category->alias)}}">{{$category->name}}</a>
                                             @endforeach
 										</li>
 									</ul>
 								</div>
 							</div>
-						  <!-- <div class="widget-odd widget-last widget-3 widget-theme-wrapper widget_no_background">
-						   <div id="tag_cloud-3" class="widget widget_tag_cloud">
-                	       <h3 class="widget-title">Recent Post</h3>
-                	       <div class="tagcloud" >
-                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt;" aria-label="Astrology (3 items)">{{$article->heading}}</a>
-                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt;" aria-label="Astrology (3 items)">{{$article->heading}}</a>
-                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt;" aria-label="Astrology (3 items)">{{$article->heading}}</a>
-                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt;" aria-label="Astrology (3 items)">{{$article->heading}}</a>
-                	       <a href="" class="tag-cloud-link tag-link-16 tag-link-position-1" style="font-size: 16.75pt;" aria-label="Astrology (3 items)">{{$article->heading}}</a>
-                           </div>
-                            </div>
-                            </div>--> 
-						
-							
+							</div>
 						</aside>
 						<!-- eof main aside sidebar -->
 					</div><!-- eof .row-->
+					
 				</div><!-- eof .container -->
 			</section><!-- eof .page_content -->
-{{method_exists($articles, 'links') ? $articles->links() : ''}}
+				
+			

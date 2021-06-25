@@ -19,7 +19,7 @@ class ArticleController extends Controller
 {
     public function index(Request $request)
     {
-        $articles = Article::getPaginate($request);
+        $articles = Article::getPaginate($request);        
         return view('frontend.articles', compact('articles'));
     }
 
@@ -60,9 +60,13 @@ class ArticleController extends Controller
 
         $article->isEditable = $this->isEditable($article);
 
-        $relatedArticles = $this->getRelatedArticles($article);
+        // $relatedArticles = $this->getRelatedArticles($article);
+        $recentArticles = Article::published()
+        ->latest()
+        ->take(5)
+        ->get();
 
-        return view('frontend.article', compact('article', 'relatedArticles'));
+        return view('frontend.article', compact('article', 'recentArticles'));
     }
     public function show($articleId, $articleHeading = '')
     {
