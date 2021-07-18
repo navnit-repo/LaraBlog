@@ -11,6 +11,7 @@
 	<title>{{isset($article) ? $article->heading : "Online Blogs of Starsgyan Astrologers | Online Astrologers Predictions"}}</title>
 	<meta name="description"  content="Starsgyan Astrologers write own blogs time to time for our readers on Astrology, Vastu, Numerology, Horoscope reading and matching, Tarot and other related services of occult science.">
     <meta name="keywords" content="Online astrology prediction, Indian astrologers online, Astrology reading online, Horoscope predictions, Vastu consultant, Tarot astrology, Palmistry, Numerology predictions online">
+    <meta name="p:domain_verify" content="e66ed58a75515b3126e896d4390610ed"/>
 	<link rel='dns-prefetch' href='http://fonts.googleapis.com' />
 	<link rel='dns-prefetch' href='http://s.w.org' />
 	<link rel="alternate" type="application/rss+xml" title="Magia &raquo; Feed" href="https://api.starsgyan.com/StarsGyanWebsiteDev/feed/index.html" />
@@ -583,11 +584,15 @@
                                             <span class=""></span>
                                         </a>
 
-                                         <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin  " style="color: white;">
+                                         <a href="https://www.linkedin.com/company/starsgyan/" target="_blank" class="fa fa-linkedin  " style="color: white;">
                                             <span class=""></span>
                                         </a>
 
                                         <a href="https://youtube.com/channel/UCHyIXY2IoZ-ltRiUbByZG0A" target="_blank" class="fa fa-youtube-play  " style="color: white;">
+                                            <span class=""></span>
+                                        </a>
+                                        
+                                        <a href="https://in.pinterest.com/Starsgyan/" target="_blank" class="fa fa-pinterest " style="color: white;">
                                             <span class=""></span>
                                         </a>
                                     </span>
