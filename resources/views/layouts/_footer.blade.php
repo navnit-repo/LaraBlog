@@ -65,7 +65,7 @@
                             </div>
                             <div class="divider-60 divider-lg-0"></div>
                         </div>
-                        <div class="col-xl-2 col-lg-3 align-self-start text-center text-lg-left">
+                        <div class="col-xl-2 col-lg-3 align-self-start text-center text-lg-left" style="padding-right:0px">
                             <div
                                 class="widget-odd widget-last widget-first widget-1 widget-theme-wrapper widget_no_background">
                                 <div id="mwt_bloginfo-4" class="widget widget_bloginfo">
@@ -88,13 +88,18 @@
                                             <span class=""></span>
                                         </a>
 
-                                        <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin  " style="color: white;">
+                                        <a href="https://www.linkedin.com/company/starsgyan/" target="_blank" class="fa fa-linkedin  " style="color: white;">
                                             <span class=""></span>
                                         </a>
 
                                         <a href="https://youtube.com/channel/UCHyIXY2IoZ-ltRiUbByZG0A" target="_blank" class="fa fa-youtube-play  " style="color: white;">
                                             <span class=""></span>
                                         </a>
+                                        
+                                         <a href="https://in.pinterest.com/Starsgyan/" target="_blank" class="fa fa-pinterest " style="color: white;">
+                                            <span class=""></span>
+                                        </a>
+                                        
                                     </span>
                                 </div>
                             </div>
