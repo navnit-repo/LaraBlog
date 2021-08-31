@@ -6,7 +6,7 @@
 							<h1 style="color: #FFAF00">
 								Blog </h1>
 							<ol class="breadcrumb">
-								<li class="breadcrumb-item first-item"><a href="./">Home</a></li>
+								<li class="breadcrumb-item first-item"><a href="https://www.starsgyan.com/">Home</a></li>
 								<li class="breadcrumb-item first-item text-white">Blog</li>
 							</ol>
 						</div>
@@ -58,6 +58,7 @@
     class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" 
         src="{{ ($article->cover_image) }}"/>-->
                 <!-- .item-media -->
+                <!--good -->
 
                 <div class="item-content  with-share" style="padding:0">
                     <div class="entry-header">
@@ -65,7 +66,7 @@
                             <a href="{{route('articles-by-category', $article->category->alias)}}">{{$article->category->name}}</a>
                         </span>
                             <a class="fs-30" href="{{route('get-article-with-heading', [$article->category->alias, make_slug($article->heading)])}}" rel="bookmark">
-                            <h4 class="entry-title mb-3 links-maincolor2">{{$article->heading}}</h4></a>
+                            <h4 class="entry-title mb-3 links-maincolor2" style="line-height:1;">{{$article->heading}}</h4></a>
                     </div>
 
                     <div class="entry-content mt-35">
@@ -99,7 +100,7 @@
             </article>
             @endforeach 
             <div style="margin-top:50px">
-            {{method_exists($articles, 'links') ? $articles->links() : ''}}
+             {{method_exists($articles, 'links') ? $articles->links() : ''}}
             </div>
         </div>
                 

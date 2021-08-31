@@ -9,8 +9,7 @@
     <meta name="googlebot" content="index,follow" />
     <link rel="canonical" href="https://www.starsgyan.com/blog.html" />
 	<title>{{isset($article) ? $article->heading : "Online Blogs of Starsgyan Astrologers | Online Astrologers Predictions"}}</title>
-	<meta name="description"  content="Starsgyan Astrologers write own blogs time to time for our readers on Astrology, Vastu, Numerology, Horoscope reading and matching, Tarot and other related services of occult science.">
-    <meta name="keywords" content="Online astrology prediction, Indian astrologers online, Astrology reading online, Horoscope predictions, Vastu consultant, Tarot astrology, Palmistry, Numerology predictions online">
+	<meta name="description"  content='{{isset($article) ? $article->article_caption : "Starsgyan Astrologers write own blogs time to time for our readers on Astrology, Vastu, Numerology, Horoscope reading and matching, Tarot and other related services of occult science."}}'>
     <meta name="p:domain_verify" content="e66ed58a75515b3126e896d4390610ed"/>
 	<link rel='dns-prefetch' href='http://fonts.googleapis.com' />
 	<link rel='dns-prefetch' href='http://s.w.org' />
