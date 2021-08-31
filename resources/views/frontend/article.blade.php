@@ -14,7 +14,7 @@
         src="https://api.starsgyan.com/StarsGyanWebsiteDev/blog7.jpg"/> -->
 			</div><!-- .item-media -->
 		<div class=" mt-5">
-        <h4 class="entry-title mb-3 links-maincolor2" style="color:#851f37">{{$article->heading}}</h4>
+        <h4 class="entry-title mb-3 links-maincolor2" style="color:#851f37; line-height:1;">{{$article->heading}}</h4>
         </div>
 		    <div class="item-content" style="padding:0">
 
