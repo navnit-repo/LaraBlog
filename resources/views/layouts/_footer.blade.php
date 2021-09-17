@@ -5,7 +5,7 @@
                             <div
                                 class="widget-odd widget-last widget-first widget-1 widget-theme-wrapper widget_no_background">
                                 <div id="mwt_bloginfo-5" class="widget widget_bloginfo"> <a class="blog-info-logo"
-                                        href="./" target="_blank">
+                                        href="https://www.starsgyan.com/" target="_blank">
                                         <img src="https://api.starsgyan.com/StarsGyanWebsiteDev/Starsgyan_logo_footer.png" class="w-50" alt="Logo">
                                     </a>
                                 </div>

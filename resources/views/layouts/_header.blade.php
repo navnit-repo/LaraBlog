@@ -486,7 +486,7 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-xl-6 col-lg-6 col-md-4 col-sm-6 text-lg-left text-center">
-                                <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/" rel="home" class="logo logo_image_and_text">
+                                <a href="https://www.starsgyan.com/" rel="home" class="logo logo_image_and_text">
                                     <img src="https://api.starsgyan.com/StarsGyanWebsiteDev/starsgyan_logo.svg" alt="" class="img-fluid">
                                 </a> </div>
                                   
