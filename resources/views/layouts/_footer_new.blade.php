@@ -160,8 +160,8 @@
                                 $mail->isSMTP();                                            
                                 $mail->Host       = 'mail.incraftiv.com';                     
                                 $mail->SMTPAuth   = true;                                   
-                                $mail->Username   = 'shubhasheesh@incraftiv.com';                     
-                                $mail->Password   = 'shubhasheesh@123#';                               
+                                $mail->Username   = 'abc@example.com';                     
+                                $mail->Password   = 'abc@123';                               
                                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
                                 $mail->Port       = 465;                                   
 
