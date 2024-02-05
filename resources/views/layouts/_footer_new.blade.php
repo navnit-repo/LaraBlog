@@ -158,7 +158,7 @@
                             try {
                                 $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      
                                 $mail->isSMTP();                                            
-                                $mail->Host       = 'mail.incraftiv.com';                     
+                                $mail->Host       = 'abc.email.com';                     
                                 $mail->SMTPAuth   = true;                                   
                                 $mail->Username   = 'abc@example.com';                     
                                 $mail->Password   = 'abc@123';                               
@@ -166,14 +166,14 @@
                                 $mail->Port       = 465;                                   
 
                                 //Recipients
-                                $mail->setFrom('shubhasheesh@incraftiv.com', 'Mailer');
-                                $mail->addAddress('neeraj.nagar@incraftiv.com', 'Neeraj Nagar');     
+                                $mail->setFrom('abc@example.com', 'Mailer');
+                                $mail->addAddress('abc@example.com', 'Abc ');     
 
 
                                 //Content
                                 $mail->isHTML(true);                                  
                                 $mail->Subject = 'Query';
-                                $mail->Body    = "Email : {$email} <br> <b>HI neeraj</b> <br> Query:{$message}";
+                                $mail->Body    = "Email : {$email} <br> <b>HI Abc </b> <br> Query:{$message}";
                                 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
                                 $mail->send();
