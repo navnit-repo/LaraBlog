@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
+				<?php
+				$BASE_URL = env('BASE_URL');
+				?>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="format-detection" content="telephone=no">
@@ -13,9 +16,9 @@
     <meta name="p:domain_verify" content="e66ed58a75515b3126e896d4390610ed"/>
 	<link rel='dns-prefetch' href='http://fonts.googleapis.com' />
 	<link rel='dns-prefetch' href='http://s.w.org' />
-	<link rel="alternate" type="application/rss+xml" title="Magia &raquo; Feed" href="https://api.starsgyan.com/StarsGyanWebsiteDev/feed/index.html" />
+	<link rel="alternate" type="application/rss+xml" title="Magia &raquo; Feed" href="{{$BASE_URL}}/feed/index.html" />
 	<link rel="alternate" type="application/rss+xml" title="Magia &raquo; Comments Feed"
-		href="https://api.starsgyan.com/StarsGyanWebsiteDev/comments/feed/index.html" />
+		href="{{$BASE_URL}}/comments/feed/index.html" />
 	<script>
 		window._wpemojiSettings = {
 			"baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/",
@@ -93,15 +96,15 @@
 			padding: 0 !important;
 		}
 	</style>
-	<link rel='stylesheet' id='font-awesome-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/css/font-awesome-ver-1.0.0.css' media='all' />
+	<link rel='stylesheet' id='font-awesome-css' href='{{$BASE_URL}}/wp-content/themes/magia/css' media='all' />
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
 	<link rel='stylesheet' id='wp-block-library-css'
-		href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-includes/css/dist/block-library/style.min-ver=5.4.2.css' media='all' />
+		href='{{$BASE_URL}}/wp-includes/css/dist/block-library/style.min-ver=5.4.2.css' media='all' />
 	<link rel='stylesheet' id='wp-block-library-theme-css'
-		href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-includes/css/dist/block-library/theme.min-ver=5.4.2.css' media='all' />
+		href='{{$BASE_URL}}/wp-includes/css/dist/block-library/theme.min-ver=5.4.2.css' media='all' />
 	<link rel='stylesheet' id='wc-block-style-css'
-		href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style-ver=2.5.14.css' media='all' />
+		href='{{$BASE_URL}}/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style-ver=2.5.14.css' media='all' />
 	
 	<style id='woocommerce-inline-inline-css'>
 		.woocommerce form .form-row .required {
@@ -125,7 +128,7 @@
        gtag('config', 'UA-196225490-1');
     </script>
 	<link rel='stylesheet' id='xoo-wsc-css'
-		href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/side-cart-woocommerce/public/css/xoo-wsc-public-ver=2.0.css' media='all' />
+		href='{{$BASE_URL}}/wp-content/plugins/side-cart-woocommerce/public/css/xoo-wsc-public-ver=2.0.css' media='all' />
 		
 		
 <style>
@@ -308,27 +311,27 @@
 			right: 0;
 		}
 	</style>
-	<link rel='stylesheet' id='ico-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/css/icomoon-ver=1.0.0.css' media='all' />
+	<link rel='stylesheet' id='ico-css' href='{{$BASE_URL}}/wp-content/themes/magia/css/icomoon-ver=1.0.0.css' media='all' />
 	<link rel='stylesheet' id='magia-google-font-css'
 		href='http://fonts.googleapis.com/css?family=Poppins:300,300i,400,500,700%7CEl+Messiri:300,400,500,600,700&subset=latin-ext&ver=1.0.0'
 		media='all' />
-	<link rel='stylesheet' id='magia-woo-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/css/shop-ver-1.0.0.css' media='all' />
-	<link rel='stylesheet' id='magia-accesspress-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/css/accesspress-ver=1.0.0.css'
+	<link rel='stylesheet' id='magia-woo-css' href='{{$BASE_URL}}/wp-content/themes/magia/css/shop-ver-1.0.0.css' media='all' />
+	<link rel='stylesheet' id='magia-accesspress-css' href='{{$BASE_URL}}/wp-content/themes/magia/css/accesspress-ver=1.0.0.css'
 		media='all' />
-	<link rel='stylesheet' id='bootstrap-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/css/bootstrap.min-ver-1.0.0.css'
+	<link rel='stylesheet' id='bootstrap-css' href='{{$BASE_URL}}/wp-content/themes/magia/css/bootstrap.min-ver-1.0.0.css'
 		media='all' />
-	<link rel='stylesheet' id='magia-animations-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/css/animations-ver=1.0.0.css'
+	<link rel='stylesheet' id='magia-animations-css' href='{{$BASE_URL}}/wp-content/themes/magia/css/animations-ver=1.0.0.css'
 		media='all' />
-	<link rel='stylesheet' id='magia-main-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/css/main-ver-1.0.0.css' media='all' />
+	<link rel='stylesheet' id='magia-main-css' href='{{$BASE_URL}}/wp-content/themes/magia/css/main-ver-1.0.0.css' media='all' />
 	<style id='magia-main-inline-css'>
 		/* Customizer options */
 		span.taxonomy-name-title {
 			display: none;
 		}
 	</style>
-	<link rel='stylesheet' id='magia-style-css' href='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/style-ver=1.0.0.css' media='all' />
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-includes/js/jquery/jquery-ver=1.12.4-wp.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-includes/js/jquery/jquery-migrate.min-ver=1.4.1.js'></script>
+	<link rel='stylesheet' id='magia-style-css' href='{{$BASE_URL}}/wp-content/themes/magia/style-ver=1.0.0.css' media='all' />
+	<script src='{{$BASE_URL}}/wp-includes/js/jquery/jquery-ver=1.12.4-wp.js'></script>
+	<script src='{{$BASE_URL}}/wp-includes/js/jquery/jquery-migrate.min-ver=1.4.1.js'></script>
 	<script>
 		var SnazzyDataForSnazzyMaps = [];
 		SnazzyDataForSnazzyMaps = {
@@ -349,11 +352,11 @@
 			"colors": ["black", "blue", "purple"]
 		};
 	</script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/snazzy-maps/snazzymaps-ver=1.2.1.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/modernizr-custom-ver=2.6.2.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/plugins/snazzy-maps/snazzymaps-ver=1.2.1.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/modernizr-custom-ver=2.6.2.js'></script>
 	<link rel="EditURI" type="application/rsd+xml" title="RSD"
 		href="http://webdesign-finder.com/magia/xmlrpc.php?rsd" />
-	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://api.starsgyan.com/StarsGyanWebsiteDev/wp-includes/wlwmanifest.xml" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{{$BASE_URL}}/wp-includes/wlwmanifest.xml" />
 	<meta name="generator" content="WordPress 5.4.2" />
 	<meta name="generator" content="WooCommerce 4.0.1" />
 	<noscript>
@@ -398,8 +401,8 @@
 			"security": "da22ce1ae4"
 		};
 	</script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/mwt-addons/mods/static/js/mod-post-likes-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min-ver=2.70.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/plugins/mwt-addons/mods/static/js/mod-post-likes-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min-ver=2.70.js'></script>
 	<script>
 		var wc_add_to_cart_params = {
 			"ajax_url": "\/magia\/wp-admin\/admin-ajax.php",
@@ -410,15 +413,15 @@
 			"cart_redirect_after_add": "no"
 		};
 	</script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min-ver=4.0.1.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min-ver=2.1.4.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min-ver=4.0.1.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min-ver=2.1.4.js'></script>
 	<script>
 		var woocommerce_params = {
 			"ajax_url": "\/magia\/wp-admin\/admin-ajax.php",
 			"wc_ajax_url": "\/magia\/?wc-ajax=%%endpoint%%"
 		};
 	</script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min-ver=4.0.1.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min-ver=4.0.1.js'></script>
 	<script>
 		var wc_cart_fragments_params = {
 			"ajax_url": "\/magia\/wp-admin\/admin-ajax.php",
@@ -428,30 +431,30 @@
 			"request_timeout": "5000"
 		};
 	</script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min-ver=4.0.1.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/bootstrap.bundle-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/affix-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/jquery.appear-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min-ver=1.4.1.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/jquery.easing.1.3-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/jquery.hoverIntent-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/superfish-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/bootstrap-progressbar.min-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/jquery.countdown.min-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/jquery.countTo-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/jquery.easypiechart.min-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/jquery.scrollbar.min-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/jquery.localScroll.min-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/jquery.scrollTo.min-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/jquery.ui.totop-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/jquery.parallax-1.1.3-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/isotope.pkgd.min-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/jquery.flexslider-min-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/vendor/owl.carousel.min-ver=1.0.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min-ver=4.1.1.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min-ver=4.1.1.js'>
+	<script src='{{$BASE_URL}}/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min-ver=4.0.1.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/bootstrap.bundle-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/affix-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/jquery.appear-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min-ver=1.4.1.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/jquery.easing.1.3-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/jquery.hoverIntent-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/superfish-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/bootstrap-progressbar.min-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/jquery.countdown.min-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/jquery.countTo-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/jquery.easypiechart.min-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/jquery.scrollbar.min-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/jquery.localScroll.min-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/jquery.scrollTo.min-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/jquery.ui.totop-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/jquery.parallax-1.1.3-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/isotope.pkgd.min-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/jquery.flexslider-min-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/vendor/owl.carousel.min-ver=1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min-ver=4.1.1.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min-ver=4.1.1.js'>
 	</script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/themes/magia/js/main-ver-1.0.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-content/themes/magia/js/main-ver-1.0.0.js'></script>
 	<script>
 		var xoo_wsc_localize = {
 			"adminurl": "http:\/\/webdesign-finder.com\/magia\/wp-admin\/admin-ajax.php",
@@ -465,15 +468,15 @@
 			"cont_height": "full_screen"
 		};
 	</script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/plugins/side-cart-woocommerce/public/js/xoo-wsc-public-ver=2.0.js'></script>
-	<script src='https://api.starsgyan.com/StarsGyanWebsiteDev/wp-includes/js/wp-embed.min-ver=5.4.2.js'></script>
-	<link rel="icon" href="https://api.starsgyan.com/StarsGyanWebsiteDev/images/favicon.jpeg" sizes="32x32" />
-    <link rel="icon" href="https://api.starsgyan.com/StarsGyanWebsiteDev/images/favicon.jpeg" sizes="192x192" />
-    <!--<link rel="apple-touch-icon" href="https://api.starsgyan.com/StarsGyanWebsiteDev/wp-content/uploads/2020/04/cropped-favicon-300x300.png" />
+	<script src='{{$BASE_URL}}/wp-content/plugins/side-cart-woocommerce/public/js/xoo-wsc-public-ver=2.0.js'></script>
+	<script src='{{$BASE_URL}}/wp-includes/js/wp-embed.min-ver=5.4.2.js'></script>
+	<link rel="icon" href="{{$BASE_URL}}/images/favicon.jpeg" sizes="32x32" />
+    <link rel="icon" href="{{$BASE_URL}}/images/favicon.jpeg" sizes="192x192" />
+    <!--<link rel="apple-touch-icon" href="{{$BASE_URL}}/wp-content/uploads/2020/04/cropped-favicon-300x300.png" />
     <meta name="msapplication-TileImage"
         content="http://webdesign-finder.com/magia/wp-content/uploads/2020/04/cropped-favicon-300x300.png" />-->
         <meta name="msapplication-TileImage"
-        content="https://api.starsgyan.com/StarsGyanWebsiteDev/images/favicon.jpeg" />
+        content="{{$BASE_URL}}/images/favicon.jpeg" />
 </head>
 <body>
 
@@ -487,7 +490,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-6 col-lg-6 col-md-4 col-sm-6 text-lg-left text-center">
                                 <a href="https://www.starsgyan.com/" rel="home" class="logo logo_image_and_text">
-                                    <img src="https://api.starsgyan.com/StarsGyanWebsiteDev/starsgyan_logo.svg" alt="" class="img-fluid">
+                                    <img src="{{$BASE_URL}}/starsgyan_logo.svg" alt="" class="img-fluid">
                                 </a> </div>
                                   
                                
@@ -521,45 +524,45 @@
                                         style="touch-action: pan-y;">
                                         <li id="menu-item-1750"
                                             class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1750 active">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/" class="sf-with-">Home</a>
+                                            <a href="{{$BASE_URL}}/" class="sf-with-">Home</a>
 
                                         </li>
                                         <li id="menu-item-1800"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1800">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/about.html">About</a></li>
+                                            <a href="{{$BASE_URL}}/about.html">About</a></li>
 
 
                                         <li id="menu-item-3223"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3223">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/astrologers.html">Astrologers</a></li>
+                                            <a href="{{$BASE_URL}}/astrologers.html">Astrologers</a></li>
 
                                         <li id="menu-item-1330"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1330">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/astrologersform.html">Join</a>
+                                            <a href="{{$BASE_URL}}/astrologersform.html">Join</a>
                                         </li>
 
                                         <li id="menu-item-1330"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1330">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/services">Services</a>
+                                            <a href="{{$BASE_URL}}/services">Services</a>
                                         </li>
                                         <li id="menu-item-1330"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1330">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/panchang.html">Panchang</a>
+                                            <a href="{{$BASE_URL}}/panchang.html">Panchang</a>
                                         </li>
 
                                         <li id="menu-item-1330"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1330">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/shopping.html">AstroMall</a>
+                                            <a href="{{$BASE_URL}}/shopping.html">AstroMall</a>
                                         </li>
                                         
                                         <li id="menu-item-1330"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1330">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/use.html">How to use</a>
+                                            <a href="{{$BASE_URL}}/use.html">How to use</a>
                                         </li>
 
                                         <li id="menu-item-1330"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1330">
-                                            <a href="https://api.starsgyan.com/StarsGyanWebsiteDev/blog.html">Blog</a>
+                                            <a href="{{$BASE_URL}}/blog.html">Blog</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -605,4 +608,5 @@
             </div>
 			<!--.header_absolute-->
 			<!--.page_title-->
+			
              

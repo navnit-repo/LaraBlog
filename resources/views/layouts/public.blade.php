@@ -1,6 +1,6 @@
-@include('layouts._header')
+@include('layouts._header_new')
 @include('layouts._alert')
 
     @yield('content')
  
-@include('layouts._footer')
+@include('layouts._footer_new')

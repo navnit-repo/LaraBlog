@@ -3,7 +3,7 @@
     <div class="panel panel-default no-margin-bottom">
         <div class="panel-heading">
             <strong>All Articles</strong>&nbsp;
-            <a href="{{route('create-article')}}"><span class="fa fa-plus"></span></a>
+            <a href="{{route('create-article')}}">ADD</a>
             <form method="get" class="form-inline d-inline text-right">
                 <select name="category" class="form-control margin-left-30">
                     <option value="">All categories</option>
@@ -46,7 +46,8 @@
                         <td class="text-center">{{$article->is_comment_eanabled ? $article->comment_count : 'N/A'}}</td>
                         <td class="text-center">
                             <a href="{{route('edit-article', $article->id)}}">
-                                <span class="fa fa-edit text-primary"></span>
+                                <!-- <span class="fa fa-edit text-primary"></span> -->
+                                Edit
                             </a>&nbsp;
                             <a href="{{route('toggle-article-publish', $article->id)}}">
                                 <strong
@@ -55,7 +56,8 @@
                             </a>&nbsp;
                             <a href="{{route('delete-article', $article->id)}}"
                                onclick="return confirm('Are you sure to delete?')">
-                                <span class="fa fa-trash text-danger"></span>
+                                <!-- <span class="fa fa-trash text-danger"></span> -->
+                                Delete 
                             </a>
                         </td>
                     </tr>

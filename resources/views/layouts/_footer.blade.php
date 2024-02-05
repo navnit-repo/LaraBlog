@@ -1,4 +1,7 @@
 <footer class="page_footer  ds ms ">
+<?php
+				$BASE_URL = env('BASE_URL');
+				?>
                 <div class="container mt-5 mb-5">
                     <div class="row align-center ">
                         <div class="col-xl-6 col-lg-5 text-center text-lg-left">
@@ -6,7 +9,7 @@
                                 class="widget-odd widget-last widget-first widget-1 widget-theme-wrapper widget_no_background">
                                 <div id="mwt_bloginfo-5" class="widget widget_bloginfo"> <a class="blog-info-logo"
                                         href="https://www.starsgyan.com/" target="_blank">
-                                        <img src="https://api.starsgyan.com/StarsGyanWebsiteDev/Starsgyan_logo_footer.png" class="w-50" alt="Logo">
+                                        <img src="<?= $BASE_URL ?>/Starsgyan_logo_footer.png" class="w-50" alt="Logo">
                                     </a>
                                 </div>
                             </div>

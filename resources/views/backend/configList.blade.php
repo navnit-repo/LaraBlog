@@ -18,8 +18,8 @@
             <td>{{$config->name}}</td>
             <td>{{$config->value}}</td>
             <td class="text-center">
-              <span class="fa fa-edit text-primary pointer"
-                    onclick="showConfigForm({{$config}})"></span>&nbsp;
+              <span class="text-primary pointer"
+                    onclick="showConfigForm({{$config}})"> Edit </span>&nbsp;
             </td>
           </tr>
         @endforeach

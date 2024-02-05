@@ -1,18 +1,80 @@
-<section class="page_title  ds s-pt-130 s-pb-70   s-pt-xl-150  s-pt-sm-175      cover-background s-"
-				style="background-image:url('https://api.starsgyan.com/StarsGyanWebsiteDev/pictures/blog banner.jpg');">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-lg-12">
-							<h1 style="color: #FFAF00">
-								Blog </h1>
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item first-item"><a href="https://www.starsgyan.com/">Home</a></li>
-								<li class="breadcrumb-item first-item text-white">Blog</li>
-							</ol>
-						</div>
-					</div>
-				</div>
-			</section>
+<?php
+				$BASE_URL = env('BASE_URL_INCRAFTIV');
+				?>
+<main id="main" class="site-main">
+            <section class="hero    hero--light ">
+                <div class="hero-content-holder">
+                    <div class="hero-content container">
+                        <div class="hero-breadcrumbs">
+                            <a href="{{$BASE_URL}}/index.php" class="hero-breadcrumb">InCraftiv</a>
+                            <a href="{{$BASE_URL}}/news/news.php" class="hero-breadcrumb">News</a>
+                        </div>
+                        <h1 class="hero-title ">News</h1>
+                        <div class="hero-tagline">
+                            Browse our latest news and updates
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="article-listing container">
+        <header class="contact-header">
+                    <nav class="page-nav   ">
+                        <ul class="page-nav-list">
+                            <li class="page-nav-list-item">
+                                <a class="page-nav-link is-active link-underline" href="index.php">
+All
+</a>
+                            </li>
+                            <li class="page-nav-list-item">
+                                <a class="page-nav-link  link-underline" href="analytics/index.html">
+Analytics
+</a>
+                            </li>
+                            <li class="page-nav-list-item">
+                                <a class="page-nav-link  link-underline" href="best-practices/index.html">
+Best practices
+</a>
+                            </li>
+                            <li class="page-nav-list-item">
+                                <a class="page-nav-link  link-underline" href="ecommerce/index.html">
+eCommerce
+</a>
+                            </li>
+                            <li class="page-nav-list-item">
+                                <a class="page-nav-link  link-underline" href="experience/index.html">
+Experience
+</a>
+                            </li>
+                            <li class="page-nav-list-item">
+                                <a class="page-nav-link  link-underline" href="initiatives/index.html">
+Initiatives
+</a>
+                            </li>
+                            <li class="page-nav-list-item">
+                                <a class="page-nav-link  link-underline" href="launches/index.html">
+Launches
+</a>
+                            </li>
+                            <li class="page-nav-list-item">
+                                <a class="page-nav-link  link-underline" href="press/index.html">
+Press
+</a>
+                            </li>
+                            <li class="page-nav-list-item">
+                                <a class="page-nav-link  link-underline" href="research/index.html">
+Research
+</a>
+                            </li>
+                            <li class="page-nav-list-item">
+                                <a class="page-nav-link  link-underline" href="tech/index.html">
+Tech
+</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+</section>
         <section class="ds page_content s-py-90 s-py-xl-150 c-gutter-60">
 		<div class="container-fluid">
 		<div class="row">
@@ -34,95 +96,42 @@
             
              </div>   
         
-
-        <div id="content" class="col-12 col-xs-12 col-lg-8 column-main" style="order:2">
-        
-        @forelse($articles as $article)
-            <article id="post-1637"
-                class="text-center box-shadow ds bs bordered text-md-left vertical-item content-padding readmore-hidden post-1637 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-taro category-transit_chart tag-astrology tag-post">
-            				                
-                <div class="item-media entry-thumbnail post-thumbnail  ">
-                 <a class="abs-link" href="{{route('get-article-with-heading', [$article->category->alias, make_slug($article->heading)])}}">
-                    <img width="1200" height="350"
-                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" 
-                        src="{{ ($article->cover_image) }}"
-                        />
-                        </a>
-                </div>
-                <!--<a class="abs-link" href="{{route('get-article', [$article->id, make_slug($article->heading)])}}">
-                <img width="700" height="355"
-    class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" 
-        src="https://api.starsgyan.com/StarsGyanWebsiteDev/blog7.jpg"/> 
-        </a>-->
-                <!--<img width="700" height="355"
-    class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" 
-        src="{{ ($article->cover_image) }}"/>-->
-                <!-- .item-media -->
-                <!--good -->
-
-                <div class="item-content  with-share" style="padding:0">
-                    <div class="entry-header">
-                        <span class="cat-links">
-                            <a href="{{route('articles-by-category', $article->category->alias)}}">{{$article->category->name}}</a>
-                        </span>
-                            <a class="fs-30" href="{{route('get-article-with-heading', [$article->category->alias, make_slug($article->heading)])}}" rel="bookmark">
-                            <h4 class="entry-title mb-3 links-maincolor2" style="line-height:1;">{{$article->heading}}</h4></a>
-                    </div>
-
-                    <div class="entry-content mt-35">
-                        <p style="color:#757575">{{$article->article_caption}}<br /></p>
-                    </div><!-- .entry-content -->
-
-                    <div class="entry-footer">
-                        <div class="entry-meta">
-                            <span><time class="published entry-date"
-                                        datetime="2019-05-17T14:06:05+00:00">{{$article->publishedAtHuman}}</time>
-                                    </span> 
-                                    </div>
-                        <div>
-                            <span class="read">
-                                <a href="{{route('get-article-with-heading', [$article->category->alias, make_slug($article->heading)])}}" class="mt-30 font-2" >Read
-                                   Now<i class="fa fa-caret-right color-main ml-2"></i></a>
-                            </span>
+					</div>
+					
+                    <section class="article-listing container">
+                    <div class="article-list">
+                    @forelse($articles as $article)
+                    <div class="article-list-item">
+                        <div class="article-list-item-figure-holder">
+                            <figure class="article-list-item-figure">
+                                <a href="{{route('get-article-with-heading', [$article->category->alias, make_slug($article->heading)])}}"><img class="article-list-item-img" src="../../static.Incraftiv.com/uploads/2022/03/pexels-stacey-gabrielle-koenitz-rozells-2425011-510x0-c-default.jpg" srcset="https://static.borngroup.com/uploads/2022/03/pexels-stacey-gabrielle-koenitz-rozells-2425011-1020x0-c-default.jpg"
+                                        alt=""></a>
+                            </figure>
+                        </div>
+                        <div class="article-list-item-body">
+                            <div class="article-list-item-meta">
+                                <ul class="article-categories">
+                                    <li><a href="{{route('articles-by-category', $article->category->name)}}">{{$article->category->name}}</a></li>
+                                    <!-- <li><a href="experience/index.html">Experience</a></li>
+                                    <li><a href="tech/index.html">Tech</a></li> -->
+                                </ul>
+                                <time class="u-text-small-caps">{{$article->publishedAtHuman}}</time>
+                            </div>
+                            <h2 class="article-list-item-title"><a href="{{route('get-article-with-heading', [$article->category->alias, make_slug($article->heading)])}}">{{$article->heading}}</a></h2>
+                            <a href="{{route('get-article-with-heading', [$article->category->alias, make_slug($article->heading)])}}" class="link-cta  link-underline" data-cursor-text="Read Article">Read Article <svg aria-hidden="true" class="icon " style="color: inherit" width="24px" height="24px" viewBox=" 0 0 24 24"><path d="M17.3771672,5.12950597 L17.4631361,5.20235307 L23.796858,11.5114765 C24.0406284,11.7543002 24.0650054,12.132908 23.8699891,12.4028885 L23.796858,12.4885235 L17.4631361,18.7976469 C17.1922801,19.067451 16.7531357,19.067451 16.4822797,18.7976469 C16.2385092,18.5548232 16.2141322,18.1762154 16.4091485,17.9062349 L16.4822797,17.8205999 L21.632,12.69 L0.693570246,12.6908766 C0.310521976,12.6908766 -4.05009359e-13,12.3815606 -4.05009359e-13,12 C-4.05009359e-13,11.6502361 0.260924716,11.3611778 0.599456872,11.3154303 L0.693570246,11.3091234 L21.631,11.309 L16.4822797,6.17940014 C16.2385092,5.93657645 16.2141322,5.5579686 16.4091485,5.28798808 L16.4822797,5.20235307 C16.7260501,4.95952939 17.1061341,4.93524702 17.3771672,5.12950597 Z"></path></svg>
+                            </a>
                         </div>
                     </div>
-
-                    <!--<div class="meta-wrap">
-                        <div class="tag-wrapper mt-30">
-                            @foreach($article->keywords as $keyword)
-                            <span class="tag-links">
-                            <a href="{{route('articles-by-keyword', [$keyword->name])}}" rel="tag">{{$keyword->name}}</a>
-                            </span>
-                            @endforeach    
-                            </div>
-                    </div>-->
-                </div><!-- eof .item-content -->
-            </article>
-            @endforeach 
-            <div style="margin-top:50px">
-             {{method_exists($articles, 'links') ? $articles->links() : ''}}
+                 
+                    @endforeach 
+                </div>
+                <div id="content" class="col-12 col-xs-12 col-lg-8 column-main" style="order:2">
+                <div style="margin-top:50px">
+                {{$articles}}
+             <!-- {{method_exists($articles, 'links') ? $articles->links() : ''}} -->
             </div>
-        </div>
-                
-                 <aside  class="col-12  col-xs-12 col-lg-2  column-sidebar d-none d-md-block tmc" style="order:1">
-                 	<div>
-							<div class="widget-odd affix-top widget-first widget-1 widget-theme-wrapper widget_no_background">
-								<div id="categories-4" class="widget widget_categories">
-									<h3 class="widget-title" style="font-weight:600">Categories</h3>
-									<ul>
-										<li class="cat-item  text-dark cat-item-89">
-                                           @foreach($navCategories as $category)
-                                            <a style="width:100%; border-top: 0.5px solid #e8e8e8;padding:5px; font-size:14px;" href="{{route('articles-by-category', $category->alias)}}">{{$category->name}}</a>
-                                            @endforeach
-										</li>
-									</ul>
-								</div>
-							</div>
-							</div>
-						</aside>
-						<!-- eof main aside sidebar -->
-					</div><!-- eof .row-->
-					
+                                </div>
+                                </section>
 				</div><!-- eof .container -->
 			</section><!-- eof .page_content -->
 				
