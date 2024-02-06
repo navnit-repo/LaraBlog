@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SendMailController;
 
 //Home
 Route::get('/', 'HomeController@index')->name('home');
@@ -32,6 +33,9 @@ Route::get('categoryById/{categoryId}', 'CategoryController@show')->name('get-ca
 Route::get('backend/admin/login', 'AuthController@showLoginForm')->name('login-form');
 Route::post('backend/admin/login', 'AuthController@login')->name('login');
 Route::get('backend/admin/logout', 'AuthController@logout')->name('logout');
+
+//mail
+Route::post('send-php-mailer-submit','SendMailController@store')->name('send.php.mailer.submit');
 
 /*
 |---------------------------------------------------------------------------------
